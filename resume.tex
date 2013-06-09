@@ -1,14 +1,21 @@
 \documentclass{article}
 
-% need tight spacing in a resume
+% need tight spacing
 \usepackage{parskip}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
 
+% and nice fonts
+\usepackage{bookman}
+\usepackage[T1]{fontenc}
+
+% for consistency in sections
 % usage: \affiliation{institution}{location}{title}{date}
-\newcommand{\affiliation}[4]{
-  \textbf{#1}, #2\\
-  \textit{#3 (#4)}
+\newcommand{\position}[2]{
+  \textit{#1 (#2)}
+}
+\newcommand{\affiliation}[2]{
+  \textbf{#1}, #2 \\*
 }
 \newenvironment{achievements}{
   \begin{itemize}
@@ -17,19 +24,48 @@
   }{
   \end{itemize}}
 
-\usepackage{bookman}
-\usepackage[T1]{fontenc}
 
 \begin{document}
 
-\affiliation{Tufts University}
-            {Medford, MA}
-            {Teaching Assistant}
-            {September 2012 - present}
-\begin{achievements}
-  \item Taught hands-on programming labs to introductory CS students
-  \item Held regular office hours to provide one-on-one assistance with
-        programming projects
-\end{achievements}
+
+\section{Experience}
+  \affiliation{Google}
+              {New York City, NY}
+    \position {Engineering Practicum Intern}
+              {May 2013 - August 2013}
+    \begin{achievements}
+      \item Worked with a partner and two mentors to develop a save button with 
+            the DoubleClick for Publishers team.
+    \end{achievements}
+
+  \affiliation{Tufts University}
+              {Medford, MA}
+    \position {Teaching Assistant}
+              {September 2012 - present}
+    \begin{achievements}
+      \item Taught hands-on programming labs to introductory CS students
+      \item Held regular office hours to provide one-on-one assistance with
+            programming projects
+    \end{achievements}
+
+  \affiliation{Brain State Technologies}
+              {Bloomington, MN}
+    \position {Intern, Software Division}
+              {August 2012}
+    \begin{achievements}
+      \item Worked with a mentor to develop applications to assist in the
+            retrieval, inspection, and update of XML based signal processing 
+            flow designs.
+      \item Define XML schema to bind application configuration parameters to 
+            Java objects (using Apache XMLBeans)
+    \end{achievements}
+
+    \position {Intern/Senior Project, Software Divison}
+              {May 2011}
+    \begin{achievements}
+      \item Worked with a small team to develop an up-sampling filter for
+      proprietary signal processing flow engine to align signal data from sources
+      with varying sample rates
+    \end{achievements}
 \end{document}
 
