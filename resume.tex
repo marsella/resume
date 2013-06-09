@@ -1,0 +1,35 @@
+\documentclass{article}
+
+% need tight spacing in a resume
+\usepackage{parskip}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% usage: \affiliation{institution}{location}{title}{date}
+\newcommand{\affiliation}[4]{
+  \textbf{#1}, #2\\
+  \textit{#3 (#4)}
+}
+\newenvironment{achievements}{
+  \begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parsep}{0pt}
+  }{
+  \end{itemize}}
+
+\usepackage{bookman}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\affiliation{Tufts University}
+            {Medford, MA}
+            {Teaching Assistant}
+            {September 2012 - present}
+\begin{achievements}
+  \item Taught hands-on programming labs to introductory CS students
+  \item Held regular office hours to provide one-on-one assistance with
+        programming projects
+\end{achievements}
+\end{document}
+
