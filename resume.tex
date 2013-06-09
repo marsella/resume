@@ -19,52 +19,58 @@
 \newcommand{\affiliation}[2]{
   \textbf{#1}, #2 \\*
 }
+\usepackage{paralist}
 \newenvironment{achievements}{
-  \begin{itemize}
-  \setlength{\topsep}{0pt}
-  \setlength{\itemsep}{1pt}
-  \setlength{\parsep}{0pt}
-  }{
-  \end{itemize}
+  \begin{compactitem} }{
+  \end{compactitem}
 }
 \newcommand{\skill}[2]{
-  \textbf{#1}:#2
+  \textbf{#1}: #2
 }
 
+% header
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\setlength{\headheight}{50pt}
+\fancyhead[C]{
+  \textbf{\large Marcella Hastings} \\ 
+  420 West 42nd Street $\bullet$ New York, NY 10036 \\
+  marcellahastings@gmail.com \\
+  952 $\bullet$ 688 $\bullet$ 2246}
+
+% ahhh so much text
 \begin{document}
+
+
+
 \section{Education}
-  \affiliation{Tufts University}
-              {Medford, MA}
-    \position{Bachelor of Science in Computer Science, Math}
-             {May 2015} \\
+  \affiliation{Tufts University}                             {Medford, MA}
+    \position{Bachelor of Science in Computer Science, Math} {May 2015} \\
+  GPA 3.63, Dean's List 2011, 2012, 2013 \\
   \skill{Relevant Coursework}
         {Programming Languages, Computational Biology, Machine Structure \&
         Assembly Level Programming (Comp 40), Cryptography, Real Analysis}
 
 \section{Experience}
-  \affiliation{Google}
-              {New York City, NY}
-    \position {Engineering Practicum Intern}
-              {May 2013 - August 2013}
+  \affiliation{Google}                       {New York City, NY}
+    \position {Engineering Practicum Intern} {May 2013 - August 2013}
     \begin{achievements}
       \item Worked with a partner and two mentors to develop a save button with 
             the DoubleClick for Publishers team.
     \end{achievements}
 
-  \affiliation{Tufts University}
-              {Medford, MA}
-    \position {Teaching Assistant}
-              {September 2012 - present}
+  \affiliation{Tufts University}   {Medford, MA}
+    \position {Teaching Assistant} {September 2012 - present}
     \begin{achievements}
       \item Taught hands-on programming labs to introductory CS students
       \item Held regular office hours to provide one-on-one assistance with
             programming projects
     \end{achievements}
 
-  \affiliation{Brain State Technologies}
-              {Bloomington, MN}
-    \position {Intern, Software Division}
-              {August 2012}
+  \affiliation{Brain State Technologies}  {Bloomington, MN}
+    \position {Intern, Software Division} {August 2012}
     \begin{achievements}
       \item Worked with a mentor to develop applications to assist in the
             retrieval, inspection, and update of XML based signal processing 
@@ -73,8 +79,7 @@
             Java objects (using Apache XMLBeans)
     \end{achievements}
 
-    \position {Intern/Senior Project, Software Divison}
-              {May 2011}
+    \position {Intern/Senior Project, Software Divison} {May 2011}
     \begin{achievements}
       \item Worked with a small team to develop an up-sampling filter for
       proprietary signal processing flow engine to align signal data from sources
@@ -82,10 +87,8 @@
     \end{achievements}
 
 \section{Skills}
-  \skill{Languages}
-        {C/C++, Java, Python, ML, some XML, HTML/CSS} \\
-  \skill{Github}
-        {github.com/marsella}
+  \skill{Languages} {C/C++, Java, Python, ML, some XML, HTML/CSS} \\
+  \skill{Github}    {github.com/marsella}
 
 \section{Projects}
   \skill{Type Inference}
