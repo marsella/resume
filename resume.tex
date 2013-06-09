@@ -4,29 +4,42 @@
 \usepackage{parskip}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
+\usepackage[margin=1in]{geometry}
 
 % and nice fonts
 \usepackage{bookman}
 \usepackage[T1]{fontenc}
 
 % for consistency in sections
-% usage: \affiliation{institution}{location}{title}{date}
+% usage: \position{title}{date}
 \newcommand{\position}[2]{
   \textit{#1 (#2)}
 }
+% usage: \affiliation{institution}{location}
 \newcommand{\affiliation}[2]{
   \textbf{#1}, #2 \\*
 }
 \newenvironment{achievements}{
   \begin{itemize}
+  \setlength{\topsep}{0pt}
   \setlength{\itemsep}{1pt}
   \setlength{\parsep}{0pt}
   }{
-  \end{itemize}}
-
+  \end{itemize}
+}
+\newcommand{\skill}[2]{
+  \textbf{#1}:#2
+}
 
 \begin{document}
-
+\section{Education}
+  \affiliation{Tufts University}
+              {Medford, MA}
+    \position{Bachelor of Science in Computer Science, Math}
+             {May 2015} \\
+  \skill{Relevant Coursework}
+        {Programming Languages, Computational Biology, Machine Structure \&
+        Assembly Level Programming (Comp 40), Cryptography, Real Analysis}
 
 \section{Experience}
   \affiliation{Google}
@@ -67,5 +80,31 @@
       proprietary signal processing flow engine to align signal data from sources
       with varying sample rates
     \end{achievements}
+
+\section{Skills}
+  \skill{Languages}
+        {C/C++, Java, Python, ML, some XML, HTML/CSS} \\
+  \skill{Github}
+        {github.com/marsella}
+
+\section{Projects}
+  \skill{Type Inference}
+        {Implemented Hindley-Milner type inference for a teaching language in
+        ML. Wrote a constraint solver to assign types to correct terms and
+        reject ill-typed terms.} \\
+  \skill{TapItOut}
+        {Developed the front end of a native Android app that allows
+        peer-to-peer money transfer using NFC technology. Built at the 2013
+        University Hacker Olympics in San Francisco.} \\
+  \skill{Virtual Machine}
+        {Designed and wrote a 32-bit virtual machine in C. Implemented a set of
+        basic operations and a macro assembler to create executable binary
+        files. Wrote a calculator program in assembly.}
+
+\section{Leadership}
+  Association of Computing Machinery, \textit{president}, Tufts Orthodox
+  Christian Fellowship, \textit{co-president}, Tufts Hackathon,
+  \textit{apprentice}
+
 \end{document}
 
