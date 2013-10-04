@@ -29,6 +29,10 @@
   \smallskip
 }
 
+\newcommand{\skillNS}[2]{
+  \textbf{#1}: #2
+}
+
 \usepackage{verbatim}
 
 % header
@@ -50,7 +54,9 @@
   GPA 3.63, Dean's List 2011, 2012, 2013 \\
   \skill{Relevant Coursework}
         {Programming Languages, Computational Biology, Machine Structure \&
-        Assembly Level Programming, Cryptography, Real Analysis}
+        Assembly Level Programming, Cryptography, Real Analysis, Algorithms
+        \textit{(in progress)}, Advanced Functional Programming Seminar
+        \textit{(in progress)}}
 
 \subsection*{Experience}
   \affiliation{Google}                       {New York City, NY}
@@ -91,22 +97,25 @@
 
 \subsection*{Hackathons}
   \skill{Looper}
-        {There is a unique path around every circle. Place different sounds
-        around that circle to create musical loops that can be connected,
-        harmonized, or turned into noisemakers. HackingArts, Sept 2013}\\
+        {%There is a unique path around every circle. 
+        Place different sounds
+        around a circle to create musical loops that can be connected,
+        harmonized, or turned into noisemakers. Wrote a web app to play with
+        HTML5 Canvas and Javascript. HackingArts, Sept 2013} \\
   \skill{Balls of Fury}
-        {Need to figure out who is the reigning office ping-pong champion?
+        {Need to find out who is the reigning office ping-pong champion?
         Upload your scores from this Android app and check out the Elo
-        rankings on the web app to see how you compare. University Hacker
-        Olympics, Sept 2013} \\
+        rankings online to see how you stack up. Developed app and
+        logos. University Hacker Olympics, Sept 2013} \\
   \skill{Nimbus}
-        {Tired of wrangling your cloud storage? Nimbus distributes your files
-        across all of your storage sites, so you don't have to worry about
-        distributing them. PennApps, Sept 2013} \\
-  \skill{TapItOut}
-      {Developed the front end of a native Android app that allows
-      peer-to-peer money transfer using NFC technology. University Hacker
-      Olympics, Jan 2013}
+        {Tired of wrangling cloud storage? Nimbus stripes files
+        across all of your storage accounts so you don't have to worry about
+        distributing them. Created a unified interface for storage APIs.
+        PennApps, Sept 2013} %\\
+% \skill{TapItOut}
+%     {Developed the front end of a native Android app that allows
+%     peer-to-peer money transfer using NFC technology. University Hacker
+%     Olympics, Jan 2013}
 
 \begin{comment}
 \subsection*{Projects}
@@ -125,9 +134,10 @@
 \end{comment}
 
 \subsection*{Skills}
-  \skill{Languages} {C/C++, Java, Python, some Standard ML, Javascript,
-                    Haskell, Scheme, XML, HTML/CSS} %\\
-  \skill{Github}    {github.com/marsella}
+  \skillNS{Languages} {C/C++, Java, Python, some Standard ML, Javascript,
+                    Haskell, Scheme, XML, HTML/CSS}\\
+  \skillNS{Tools}     {LaTeX, git, OS X, Unix/Linux, AutoCAD 2012} \\
+  \skillNS{Github}    {github.com/marsella}
 
 \subsection*{Leadership}
   Association of Computing Machinery, \textit{president}, Tufts Orthodox
