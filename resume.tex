@@ -4,7 +4,7 @@
 \usepackage{parskip}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=22mm]{geometry}
 
 % and nice fonts
 \usepackage{bookman}
@@ -31,6 +31,12 @@
 
 \newcommand{\skillNS}[2]{
   \textbf{#1}: #2
+}
+
+% usage: \hack{hackathon}{date}{description}
+\newcommand{\hack}[3]{
+  \textbf{#1} \textit{(#2)}: #3
+  \smallskip
 }
 
 \usepackage{verbatim}
@@ -74,7 +80,7 @@
     \begin{achievements}
       \item Taught hands-on programming labs to introductory CS students
       \item Held regular office hours to provide one-on-one assistance with
-            programming projects
+            programming projects.
     \end{achievements}
     \smallskip
 
@@ -84,38 +90,34 @@
       \item Worked with a mentor to develop applications to assist in the
             retrieval, inspection, and update of XML based signal processing 
             flow designs.
-      \item Define XML schema to bind application configuration parameters to 
-            Java objects (using Apache XMLBeans)
+      \item Defined XML schema to bind application configuration parameters to 
+            Java objects (using Apache XMLBeans).
     \end{achievements}
 
     \position {Intern/Senior Project, Software Divison} {May 2011}
     \begin{achievements}
-      \item Worked with a small team to develop an up-sampling filter for
-      proprietary signal processing flow engine to align signal data from sources
-      with varying sample rates
+      \item Worked with a small team to develop an up-sampling filter for a
+      proprietary signal processing flow engine to align signal data from
+      sources with varying sample rates.
     \end{achievements}
 
 \subsection*{Hackathons}
-  \skill{Looper}
-        {%There is a unique path around every circle. 
-        Place different sounds
-        around a circle to create musical loops that can be connected,
-        harmonized, or turned into noisemakers. Wrote a web app to play with
-        HTML5 Canvas and Javascript. HackingArts, Sept 2013} \\
-  \skill{Balls of Fury}
+  \textit{Source code is available on GitHub:
+  \texttt{https://github.com/marsella}} \\
+  \hack{HackingArts} {Sept 2013} 
+        {Place different sounds around a circle to create musical loops that
+        can be connected, harmonized, or turned into noisemakers. Wrote a web
+        app called Looper to play with HTML5 Canvas and
+        Javascript. \texttt{http://tinyurl.com/looperhack}} \\
+  \hack{University Hacker Olympics} {Sept 2013} 
         {Need to find out who is the reigning office ping-pong champion?
-        Upload your scores from this Android app and check out the Elo
-        rankings online to see how you stack up. Developed app and
-        logos. University Hacker Olympics, Sept 2013} \\
-  \skill{Nimbus}
+        Upload your scores from the Balls of Fury app and check out
+        the Elo rankings online to see how you stack up. Developed Android app 
+        and logos.} \\ 
+  \hack{PennApps} {Sept 2013} 
         {Tired of wrangling cloud storage? Nimbus stripes files
         across all of your storage accounts so you don't have to worry about
-        distributing them. Created a unified interface for storage APIs.
-        PennApps, Sept 2013} %\\
-% \skill{TapItOut}
-%     {Developed the front end of a native Android app that allows
-%     peer-to-peer money transfer using NFC technology. University Hacker
-%     Olympics, Jan 2013}
+        distributing them. Created a unified interface for storage APIs.}
 
 \begin{comment}
 \subsection*{Projects}
@@ -135,9 +137,8 @@
 
 \subsection*{Skills}
   \skillNS{Languages} {C/C++, Java, Python, some Standard ML, Javascript,
-                    Haskell, Scheme, XML, HTML/CSS}\\
+                      Haskell, Scheme, XML, HTML/CSS}\\
   \skillNS{Tools}     {LaTeX, git, OS X, Unix/Linux, AutoCAD 2012} \\
-  \skillNS{Github}    {github.com/marsella}
 
 \subsection*{Leadership}
   Association of Computing Machinery, \textit{president}, Tufts Orthodox
