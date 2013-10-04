@@ -10,7 +10,7 @@
 \usepackage{bookman}
 \usepackage[T1]{fontenc}
 
-% for consistency in sections
+% for consistency in subsections
 % usage: \position{title}{date}
 \newcommand{\position}[2]{
   \textit{#1 (#2)}
@@ -26,7 +26,10 @@
 }
 \newcommand{\skill}[2]{
   \textbf{#1}: #2
+  \smallskip
 }
+
+\usepackage{verbatim}
 
 % header
 \usepackage{fancyhdr}
@@ -36,28 +39,27 @@
 \setlength{\headheight}{50pt}
 \fancyhead[C]{
   \textbf{\large Marcella Hastings} \\ 
-  389 Boston Avenue $\bullet$ Medford, MA 02155\\
+  483 Hillside Hall $\bullet$ Tufts University $\bullet$ Medford, MA 02155\\
   marcellahastings@gmail.com \\
   952 $\bullet$ 688 $\bullet$ 2246}
 
-% ahhh so much text
 \begin{document}
-\section*{Education}
+\subsection*{Education}
   \affiliation{Tufts University}                             {Medford, MA}
     \position{Bachelor of Science in Computer Science, Math} {May 2015} \\
   GPA 3.63, Dean's List 2011, 2012, 2013 \\
   \skill{Relevant Coursework}
         {Programming Languages, Computational Biology, Machine Structure \&
-        Assembly Level Programming (Comp 40), Cryptography, Real Analysis}
+        Assembly Level Programming, Cryptography, Real Analysis}
 
-\section*{Experience}
+\subsection*{Experience}
   \affiliation{Google}                       {New York City, NY}
     \position {Engineering Practicum Intern} {May 2013 - August 2013}
     \begin{achievements}
-      \item Worked with a partner and two mentors to develop the 
+      \item Worked with a partner and two mentors to develop a
             saving filters feature for the \\ DoubleClick for Publishers team.
-      \item Created the client-facing interface for the feature in
-            Java and implemented saving \\ functionality.
+      \item Created the client-facing interface for the feature and
+      implemented saving functionality in Java.
     \end{achievements}
     \smallskip
 
@@ -87,7 +89,27 @@
       with varying sample rates
     \end{achievements}
 
-\section*{Projects}
+\subsection*{Hackathons}
+  \skill{Looper}
+        {There is a unique path around every circle. Place different sounds
+        around that circle to create musical loops that can be connected,
+        harmonized, or turned into noisemakers. HackingArts, Sept 2013}\\
+  \skill{Balls of Fury}
+        {Need to figure out who is the reigning office ping-pong champion?
+        Upload your scores from this Android app and check out the Elo
+        rankings on the web app to see how you compare. University Hacker
+        Olympics, Sept 2013} \\
+  \skill{Nimbus}
+        {Tired of wrangling your cloud storage? Nimbus distributes your files
+        across all of your storage sites, so you don't have to worry about
+        distributing them. PennApps, Sept 2013} \\
+  \skill{TapItOut}
+      {Developed the front end of a native Android app that allows
+      peer-to-peer money transfer using NFC technology. University Hacker
+      Olympics, Jan 2013}
+
+\begin{comment}
+\subsection*{Projects}
   \skill{Type Inference}
         {Implemented Hindley-Milner type inference for a teaching language in
         ML. Wrote a constraint solver to assign types to correct terms and
@@ -100,15 +122,17 @@
         {Designed and wrote a 32-bit virtual machine in C. Implemented a set of
         basic operations and a macro assembler to create executable binary
         files. Wrote a calculator program in assembly.}
+\end{comment}
 
-\section*{Skills}
-  \skill{Languages} {C/C++, Java, Python, ML, some XML, HTML/CSS} \\
+\subsection*{Skills}
+  \skill{Languages} {C/C++, Java, Python, some Standard ML, Javascript,
+                    Haskell, Scheme, XML, HTML/CSS} %\\
   \skill{Github}    {github.com/marsella}
 
-\section*{Leadership}
+\subsection*{Leadership}
   Association of Computing Machinery, \textit{president}, Tufts Orthodox
-  Christian Fellowship, \textit{co-president}, Tufts Hackathon,
-  \textit{apprentice}
+  Christian Fellowship, \textit{president}, Tufts Hackathon,
+  \textit{organizer}
 
 \end{document}
 
