@@ -11,6 +11,7 @@
 % and nice fonts
 \usepackage{bookman}
 \usepackage[T1]{fontenc}
+\usepackage[compact]{titlesec}
 
 
 % for consistency in subsections
@@ -50,7 +51,7 @@
 \setlength{\headheight}{50pt}
 \fancyhead[C]{
   \textbf{\large Marcella Hastings} \\ 
-  483 Hillside Hall $\bullet$ Tufts University $\bullet$ Medford, MA 02155\\
+  50 Curtis Avenue $\bullet$ Somerville, MA 02144\\
   marcellahastings@gmail.com \\
   952 $\bullet$ 688 $\bullet$ 2246}
 
@@ -58,14 +59,23 @@
 \subsection*{Education}
   \affiliation{Tufts University}                             {Medford, MA}
     \position{Bachelor of Science in Computer Science, Math} {May 2015} \\
-  GPA 3.67, Dean's List 2011, 2012, 2013 \\
+  GPA 3.71, Dean's List 2011-2014 \\
   \skill{Relevant Coursework}
         {Programming Languages, Computational Biology, Machine Structure \&
-        Assembly Level Programming, Cryptography, Real Analysis, Algorithms
-        , Advanced Functional Programming Seminar, Computational Theory
-        \textit{(in progress)}, Computer Graphics \textit{(in progress)}}
+        Assembly Level Programming, Cryptography, Real Analysis, Algorithms,
+        Advanced Functional Programming Seminar, Computational Theory, 
+        Computer Graphics}
 
 \subsection*{Experience}
+  \affiliation{MIT Lincoln Laboratory}       {Lexington, MA}
+    \position {Summer Research Student}      {May 2014 - August 2014}
+    \begin{achievements}
+      \item Developed end-to-end prototype for a cryptographically secure
+      mechanism to allow users to authenticate to services from a single
+      fortified device.
+    \end{achievements}
+    \smallskip
+
   \affiliation{Google}                       {New York City, NY}
     \position {Engineering Practicum Intern} {May 2013 - August 2013}
     \begin{achievements}
@@ -79,9 +89,10 @@
   \affiliation{Tufts University}   {Medford, MA}
     \position {Teaching Assistant} {September 2012 - present}
     \begin{achievements}
-      \item Taught hands-on programming labs to introductory CS students
-      \item Held regular office hours to provide one-on-one assistance with
-            programming projects.
+      \item Taught hands-on programming labs to introductory CS students and
+      held regular office hours for one-on-one assistance
+      \item Lead TA training sessions and small-group meetings throughout the
+      semester to promote motivation and consistency in the TA community
     \end{achievements}
     \smallskip
 
@@ -91,8 +102,10 @@
       \item Worked with a mentor to develop applications to assist in the
             retrieval, inspection, and update of XML based signal processing 
             flow designs.
+      \begin{comment}
       \item Defined XML schema to bind application configuration parameters to 
             Java objects (using Apache XMLBeans).
+      \end{comment}
     \end{achievements}
 
     \position {Intern/Senior Project, Software Divison} {May 2011}
@@ -137,14 +150,20 @@
 \end{comment}
 
 \subsection*{Skills}
-  \skillNS{Languages} {C/C++, Java, Python, some Standard ML, Javascript,
-                      Haskell, Scheme, XML, HTML/CSS}\\
-  \skillNS{Tools}     {LaTeX, git, OS X, Unix/Linux, AutoCAD 2012} \\
+  \skillNS{Languages} {C/C++, Java, Python, some Javascript,
+                      Haskell, Scheme, Standard ML, XML, HTML/CSS}\\
+  \skillNS{Tools}     {LaTeX, git, OS X, Unix/Linux, Eclipse, AutoCAD 2012}
 
 \subsection*{Leadership}
-  Computer Science Exchange, \textit{president}, Tufts Orthodox
-  Christian Fellowship, \textit{president}, Tufts Hackathon,
-  \textit{organizer}
+\begin{minipage}[b]{0.5\linewidth}
+Computer Science Exchange, \textit{president} \\
+Tufts Hackathon, \textit{organizer}
+\end{minipage}
+\hspace{0.25cm}
+\begin{minipage}[b]{0.5\linewidth}
+Orthodox Christian Fellowship, \textit{president} \\
+Tufts Jumbo Talk, \textit{blogger}
+\end{minipage}
 
 \end{document}
 
