@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage[margin=1in]{geometry}
 \usepackage{enumitem}
+\usepackage[pdfborder={0 0 0}]{hyperref}
 
 \setlength\parindent{0pt}
 
@@ -8,7 +9,7 @@
 
 \begin{document}
 \pagestyle{empty}
-\noindent\textbox{\textbf{Marcella Hastings}\hfill}\textbox{\centering \texttt{mhast@seas.upenn.edu}}\textbox{\hfill marcellahastings.com}
+\noindent\textbox{\textbf{Marcella Hastings}\hfill}\textbox{\centering \texttt{mhast@seas.upenn.edu}}\textbox{\hfill \href{http://marcellahastings.com}{marcellahastings.com}}
 
 \hrulefill
 
@@ -23,10 +24,28 @@
     \textit{Summa Cum Laude}
 \end{itemize}
 
-\textsc{Publications}
+\textsc{Work Experience} \hrulefill
+\begin{itemize}[label={}]
+  \item \textbf{Bolt Labs, Inc.}, Philadelphia, PA USA, August 2019 - present\\
+  \textit{Cryptographic Engineer.} Designed and implemented a proof-of-concept application for private digital payments using secure multi-party computation. Integrated Rust, C++, and open-source software. Currently proving security in the simulation model.
+  \item \textbf{Software Applications and Innovations Lab}, Boston, MA USA, May 2019 - August 2019\\
+  \textit{Research Intern.} Implemented feature libraries and worked on a cryptographically secure protocol for generating preprocessing data in the JIFF framework for secure multi-party computation.
+  \item \textbf{MIT Lincoln Laboratory}, Lexington, MA USA, May - August 2014 \\
+  \textit{Research Intern.} Developed an end-to-end prototype for a cryptographically secure mechanism for authentication from a single fortified device.
+  \item \textbf{Google}, New York, NY USA, June - August 2013\\
+  \textit{Engineering Practicum Intern.} Designed and implemented a client-facing interface and implementation for a saving filters feature with the DoubleClick for Publishers team.
+\end{itemize}
+
+\textsc{Open Source} \hrulefill
+\begin{itemize}[label={}]
+  \item \textbf{MPC frameworks} [\href{https://github.com/mpc-sok/frameworks}{\texttt{github.com/mpc-sok/frameworks}}]\\
+  I maintain an open-source repository with Docker build environments for software frameworks for secure multi-party computation (based on [1]). 140 stars, 37 forks on GitHub. 
+\end{itemize}
+
+\textsc{Publications} \hrulefill
 
 \textit{Refereed Conference Proceedings}
-\begin{itemize}[label={}]
+\begin{enumerate}[label={[\arabic*]}]
 \item SoK: General Purpose Compilers for Secure Multi-Party Computation. 
 Marcella Hastings, Brett Hemenway, Daniel Noble, and Steve Zdancewic.
 In \textit{40th IEEE Symposium on Security and Privacy} (Oakland `19). May 2019.
@@ -39,20 +58,9 @@ In \textit{Network and Distributed System Security Symposium} (NDSS `17). Februa
 \item Weak Keys Remain Widespread in Network Devices. 
 Marcella Hastings, Joshua Fried, and Nadia Heninger. 
 In \textit{Proceedings of the 2016 ACM on Internet Measurement Conference} (IMC `16). November 2016.
-\end{itemize}
+\end{enumerate}
 
-
-\textsc{Work Experience}
-\begin{itemize}[label={}]
-  \item \textbf{Software Applications and Innovations Lab}, Boston, MA USA, May 2019 - August 2019\\
-  \textit{Research Intern.} Implementing feature libraries and a cryptographically secure protocol for generating preprocessing data in the JIFF framework for secure multi-party computation.
-  \item \textbf{MIT Lincoln Laboratory}, Lexington, MA USA, May - August 2014 \\
-  \textit{Research Intern.} Developed an end-to-end prototype for a cryptographically secure mechanism for authentication from a single fortified device.
-  \item \textbf{Google}, New York, NY USA, June - August 2013\\
-  \textit{Engineering Practicum Intern.} Designed and implemented a client-facing interface and implementation for a saving filters feature with the DoubleClick for Publishers team.
-\end{itemize}
-
-\textsc{Invited Talks}
+\textsc{Invited Talks} \hrulefill
 \begin{itemize}[label={}]
 \item \emph{General purpose compilers for secure multi-party computation}\\
   DC Area Crypto Day, December 2018 \\
@@ -60,19 +68,21 @@ In \textit{Proceedings of the 2016 ACM on Internet Measurement Conference} (IMC 
   Real World Cryptography, January 2020
 \end{itemize}
 
-\textsc{Teaching}
-\begin{itemize}[label={}]
-\item Designed course materials, taught hands-on programming labs, developed grading software, managed teaching assistants, and held regular office hours for undergraduate and graduate-level courses.
 
-\item \textbf{University of Pennsylvania:}
-CIS 331: Introduction to Networks and System Security, Spring 2017.
-CIS 556: Cryptography, Fall 2016.
-GEMS Computer Science Workshop, Summer 2017.
-\item \textbf{Tufts University:} 
-COMP 170: Theory of Computation, Spring 2015.
-COMP 50: Problem-Solving by Computer, Fall 2013.
-COMP 11: Introduction to Computer Science, Fall 2012 - Spring 2015.
-\end{itemize}
+
+%\textsc{Teaching}
+%\begin{itemize}[label={}]
+%\item Designed course materials, taught hands-on programming labs, developed grading software, managed teaching assistants, and held regular office hours for undergraduate and graduate-level courses.
+
+%\item \textbf{University of Pennsylvania:}
+%CIS 331: Introduction to Networks and System Security, Spring 2017.
+%CIS 556: Cryptography, Fall 2016.
+%GEMS Computer Science Workshop, Summer 2017.
+%\item \textbf{Tufts University:} 
+%COMP 170: Theory of Computation, Spring 2015.
+%COMP 50: Problem-Solving by Computer, Fall 2013.
+%COMP 11: Introduction to Computer Science, Fall 2012 - Spring 2015.
+%\end{itemize}
 
 \end{document}
 
