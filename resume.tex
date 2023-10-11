@@ -2,87 +2,74 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{enumitem}
 \usepackage[pdfborder={0 0 0}]{hyperref}
+\usepackage[x11names]{xcolor}
+\hypersetup{ 
+    urlcolor=Orchid4,
+    colorlinks=true,
+}
 
-\setlength\parindent{0pt}
+\setlength\parindent{1pt}
 
 \newcommand{\textbox}[1]{\parbox{.333\textwidth}{#1}}
 
 \begin{document}
 \pagestyle{empty}
-\noindent\textbox{\textbf{Marcella Hastings}\hfill}\textbox{\centering \texttt{mhast@seas.upenn.edu}}\textbox{\hfill \href{http://marcellahastings.com}{marcellahastings.com}}
+\noindent\textbox{\textbf{Marcella Hastings}\hfill}\textbox{\centering \texttt{marcellahastings@gmail.com}}\textbox{\hfill \href{http://marcellahastings.com}{marcellahastings.com}}
+
+\textsc{Work Experience} \hrulefill
+\begin{itemize}[label={}]
+  \item \textbf{Bolt Labs Holdings, Inc}, USA (remote) \\
+  \textit{Cryptographic Engineer.} February 2021 - present.\\
+  \textit{Cryptography Consultant.} August 2019 - February 2021.
+  \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+    \item Acted as tech lead for a small team to audit, prioritize, and implement changes to upgrade \href{https://github.com/boltlabs-inc/tss-ecdsa}{a threshold ECDSA library} from proof-of-concept to production quality in Rust.
+    \item Developed cryptographic APIs for distributed protocols in collaboration with product and system developers for use in efficient, scalable applications; design goals included abstracting over deployment decisions (e.g. network topology, database setup) while preventing cryptographic misuse.
+    \item Wrote detailed specifications with implementation guidance for \href{https://github.com/boltlabs-inc/key-mgmt-spec}{custom cryptographic} \href{https://github.com/boltlabs-inc/zkchannels-spec}{protocols}. 
+    \item Collaborated on the development of custom distributed cryptographic protocols, including evaluation and comparison of dependencies and informal security analysis.
+    \item Led education efforts outside the cryptography division sharing knowledge about general cryptography engineering and principles and providing cryptography onboarding for new hires.
+    \item As a consultant, designed and implemented a proof-of-concept application of a custom protocol using MPC, including integrating academic MPC libraries.
+  \end{itemize}
+  \item \textbf{Microsoft Resarch}, Cryptography and Privacy group, Seattle, WA USA (remote)\\
+  \textit{Research Intern.} Hosted by \href{https://haochenuw.github.io/}{Hao Chen}. May - August 2020.
+  \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt, partopsep=0pt]
+    \item Refactored monolithic PSI implementation to add abstraction layers between cryptographic dependencies (including OT, OT-extension, and OPRF). Implemented general-purpose PSI test suite.
+    \item Built a deployment pipeline for secure computation applications to run on an existing developer platform. Improved accessibility of automated deployments by determining secure defaults.
+  \end{itemize}
+  \item \textbf{Software \& Application Innovation Lab} at Boston University, Boston, MA USA\\
+  \textit{Research Intern.} May - August 2019.\\
+  Implemented feature libraries and worked on a cryptographically secure protocol for generating preprocessing data in the JIFF framework for secure multi-party computation.
+\end{itemize}
+
+\textsc{Selected Open Source} \hrulefill
+\begin{itemize}[label={}]
+  \item \textbf{tss-ecdsa} [\href{https://github.com/boltlabs-inc/tss-ecdsa}{\texttt{github.com/boltlabs-inc/tss-ecdsa}}]\\
+  Improved a threshold ECDSA implementation, including auditing for correctness and code quality, abstracting internal APIs, adding tests, correcting security parameters, writing extensive documentation, and updating public API to be suitable for production deployments. Work done at Bolt Labs.
+  \item \textbf{MPC frameworks} [\href{https://github.com/mpc-sok/frameworks}{\texttt{github.com/mpc-sok/frameworks}}]\\
+  Developed an open-source repository and wiki of Docker build environments to compile and run research software frameworks for secure multi-party computation (based on [1]). 400+ stars, 100+ forks on GitHub. Work done at University of Pennsylvania.
+\end{itemize}
 
 \textsc{Education} \hrulefill
 \begin{itemize}[label={}]
   \item \textbf{University of Pennsylvania}, Philadelphia, Pennsylvania USA \\
-    M.S., Ph.D., Department of Computer Science \textit{(expected December 2020)}\\
-    Advisor: Nadia Heninger. GPA: 3.90
+    Ph.D., M.S., Department of Computer Science, February 2021. Advised by Nadia Heninger.
     
   \item \textbf{Tufts University}, Medford, Massachusetts USA \\
-    B.S., Computer Science and Mathematics, May 2015 \\
-    \textit{Summa Cum Laude}
+    B.S., Computer Science and Mathematics, May 2015. \textit{Summa Cum Laude}
 \end{itemize}
 
-\textsc{Work Experience} \hrulefill
-\begin{itemize}[label={}]
-  \item \textbf{Bolt Labs, Inc.}, Philadelphia, PA USA, August 2019 - present\\
-  \textit{Cryptographic Engineer.} Designed and implemented a proof-of-concept application for private digital payments using secure multi-party computation. Integrated Rust, C++, and open-source software. Currently proving security in the simulation model.
-  \item \textbf{Microsoft Resarch}, Seattle, WA USA, May - August 2020\\
-  \textit{Research Intern.} Refactored and tested secure computation implementations. Integrated secure computation applications into the Seclud developer platform for improved accessibility.
-  \item \textbf{Software Applications and Innovations Lab}, Boston, MA USA, May 2019 - August 2019\\
-  \textit{Research Intern.} Implemented feature libraries and worked on a cryptographically secure protocol for generating preprocessing data in the JIFF framework for secure multi-party computation.
-  \item \textbf{MIT Lincoln Laboratory}, Lexington, MA USA, May - August 2014 \\
-  \textit{Research Intern.} Developed an end-to-end prototype for a cryptographically secure mechanism for authentication from a single fortified device.
-  %\item \textbf{Google}, New York, NY USA, June - August 2013\\
-  %\textit{Engineering Practicum Intern.} Designed and implemented a client-facing interface and implementation for a saving filters feature with the DoubleClick for Publishers team.
-\end{itemize}
-
-\textsc{Open Source} \hrulefill
-\begin{itemize}[label={}]
-  \item \textbf{MPC frameworks} [\href{https://github.com/mpc-sok/frameworks}{\texttt{github.com/mpc-sok/frameworks}}]\\
-  I maintain an open-source repository of Docker build environments to compile and run research software frameworks for secure multi-party computation (based on [1]). 219 stars, 60 forks on GitHub. 
-\end{itemize}
-
-\textsc{Publications} \hrulefill
+\textsc{Selected Publications} \hrulefill
 
 \textit{Refereed Conference Proceedings}
 \begin{enumerate}[label={[\arabic*]}]
-\item SoK: General Purpose Compilers for Secure Multi-Party Computation. 
+\item \href{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IwKeLxkAAAAJ&citation_for_view=IwKeLxkAAAAJ:9yKSN-GCB0IC}{SoK: General Purpose Compilers for Secure Multi-Party Computation}. 
 Marcella Hastings, Brett Hemenway, Daniel Noble, and Steve Zdancewic.
-In \textit{40th IEEE Symposium on Security and Privacy} (Oakland `19). May 2019.
-\item The Proof is in the Pudding: Proofs of Work for Solving Discrete Logarithms.
+In \textit{40th IEEE Symposium on Security and Privacy}. May 2019.
+\item \href{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IwKeLxkAAAAJ&citation_for_view=IwKeLxkAAAAJ:d1gkVwhDpl0C}{The Proof is in the Pudding: Proofs of Work for Solving Discrete Logarithms}.
 Marcella Hastings, Nadia Heninger, Eric Wustrow.
-In \emph{Financial Cryptography and Data Security} (FC `19). February 2019.
-\item Measuring Small Subgroup Attacks on Diffie-Hellman. 
-Luke Valenta, David Adrian, Antonio Sanso, Shaanan Cohney, Joshua Fried, Marcella Hastings, J. Alex Halderman, Nadia Heninger. 
-In \textit{Network and Distributed System Security Symposium} (NDSS `17). February 2017.
-\item Weak Keys Remain Widespread in Network Devices. 
-Marcella Hastings, Joshua Fried, and Nadia Heninger. 
-In \textit{Proceedings of the 2016 ACM on Internet Measurement Conference} (IMC `16). November 2016.
+In \emph{Financial Cryptography and Data Security}. February 2019.
 \end{enumerate}
 
-\textsc{Invited Talks} \hrulefill
-\begin{itemize}[label={}]
-\item \emph{General purpose compilers for secure multi-party computation}\\
-  DC Area Crypto Day, December 2018 \\
-  Theory and Practice of Multi-Party Computation Workshops, June 2019\\
-  Real World Cryptography, January 2020
-\end{itemize}
 
-
-
-%\textsc{Teaching}
-%\begin{itemize}[label={}]
-%\item Designed course materials, taught hands-on programming labs, developed grading software, managed teaching assistants, and held regular office hours for undergraduate and graduate-level courses.
-
-%\item \textbf{University of Pennsylvania:}
-%CIS 331: Introduction to Networks and System Security, Spring 2017.
-%CIS 556: Cryptography, Fall 2016.
-%GEMS Computer Science Workshop, Summer 2017.
-%\item \textbf{Tufts University:} 
-%COMP 170: Theory of Computation, Spring 2015.
-%COMP 50: Problem-Solving by Computer, Fall 2013.
-%COMP 11: Introduction to Computer Science, Fall 2012 - Spring 2015.
-%\end{itemize}
 
 \end{document}
 
