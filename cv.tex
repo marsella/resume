@@ -1,30 +1,56 @@
 \documentclass{article}
 \usepackage[margin=1in]{geometry}
+\usepackage[pdfborder={0 0 0}]{hyperref}
 \usepackage{enumitem}
 
 \setlength\parindent{0pt}
 
 \begin{document}
-Marcella Hastings
 
-\hrulefill
-
-\textsc{Contact}
+\textsc{Marcella Hastings}
 \begin{itemize}[label={},noitemsep, topsep=0pt]
-  \item Moore 102, 200 South 33rd Street, Philadelphia PA, 19104
-  \item \texttt{mhast@cis.upenn.edu}
+  \item \texttt{marcellahastings@gmail.com}
   \item marcellahastings.com\\
 \end{itemize}
 
 \textsc{Education}
 \begin{itemize}[label={}, topsep=0pt]
   \item \textbf{University of Pennsylvania}, Philadelphia, Pennsylvania USA \\
-    M.S., Ph.D., Department of Computer Science, \textit{(expected December 2020)}\\
-    Advisor: Nadia Heninger 
+    Ph.D., M.S., Department of Computer Science, February 2021 \\
+    Advisor: Nadia Heninger\\
+    PhD Committee: Brett Hemenway Falk, Steve Zdancewic, Sebastian Angel, abhi shelat (Northeastern University)
     
   \item \textbf{Tufts University}, Medford, Massachusetts USA \\
     B.S., Computer Science and Mathematics, May 2015 \\
     \textit{Summa Cum Laude} \\
+\end{itemize}
+
+\textsc{Work Experience}
+\begin{itemize}[label={}, topsep=0pt]
+  \item \textbf{Bolt Labs Holdings, Inc}, USA (remote) \\
+  \textit{Cryptographic Engineer.} February 2021 - present.\\
+  \textit{Cryptography Consultant.} August 2019 - February 2021.
+  \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+    \item Acted as tech lead for a small team to audit, prioritize, and implement changes to upgrade \href{https://github.com/boltlabs-inc/tss-ecdsa}{a threshold ECDSA library} from proof-of-concept to production quality in Rust.
+    \item Developed cryptographic APIs for distributed protocols in collaboration with product and system developers for use in efficient, scalable applications; design goals included abstracting over deployment decisions (e.g. network topology, database setup) while preventing cryptographic misuse.
+    \item Wrote detailed specifications with implementation guidance for \href{https://github.com/boltlabs-inc/key-mgmt-spec}{custom cryptographic} \href{https://github.com/boltlabs-inc/zkchannels-spec}{protocols}. 
+    \item Collaborated on the development of custom distributed cryptographic protocols, including evaluation and comparison of dependencies and informal security analysis.
+    \item Led education efforts outside the cryptography division sharing knowledge about general cryptography engineering and principles and providing cryptography onboarding for new hires.
+    \item As a consultant, designed and implemented a proof-of-concept application of a custom protocol using MPC, including integrating academic MPC libraries.
+  \end{itemize}
+  \item \textbf{Microsoft Resarch}, Cryptography and Privacy group, Seattle, WA USA (remote)\\
+  \textit{Research Intern.} Hosted by \href{https://haochenuw.github.io/}{Hao Chen}. May - August 2020.
+  \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt, partopsep=0pt]
+    \item Refactored monolithic PSI implementation to add abstraction layers between cryptographic dependencies (including OT, OT-extension, and OPRF). Implemented general-purpose PSI test suite.
+    \item Built a deployment pipeline for secure computation applications to run on an existing developer platform. Improved accessibility of automated deployments by determining secure defaults.
+  \end{itemize}
+  \item \textbf{Software \& Application Innovation Lab} at Boston University, Boston, MA USA\\
+  \textit{Research Intern.} May - August 2019.\\
+  Implemented feature libraries and worked on a cryptographically secure protocol for generating preprocessing data in the JIFF framework for secure multi-party computation.
+  \item \textbf{MIT Lincoln Laboratory}, Lexington, MA USA\\
+  \textit{Research Intern.} May - August 2014.
+  \item \textbf{Google}, New York City, NY USA\\
+  \textit{Engineering Practicum Intern.} June - August 2013.\\
 \end{itemize}
 
 \textsc{Publications}
@@ -45,6 +71,12 @@ Marcella Hastings, Joshua Fried, and Nadia Heninger.
 In \textit{Proceedings of the 2016 ACM on Internet Measurement Conference} (IMC `16). November 2016.
 \end{itemize}
 
+\textit{Refereed Journals}
+\begin{itemize}[label={}]
+\item Privacy Preserving Network Analytics. Marcella Hastings, Brett Hemenway Falk, Gerry Tsoukalas.
+In \textit{Management Science} 69(9):5482-5500. 2022.
+\end{itemize}
+
 \textsc{Invited Talks}
 
 \emph{General purpose frameworks for secure multi-party computation}
@@ -63,7 +95,11 @@ In \textit{Proceedings of the 2016 ACM on Internet Measurement Conference} (IMC 
 \item PETS 2017, 2018, 2019. \item USENIX Security 2019.
 \end{itemize}
 
-\textit{Open-Source Software:} MPC-SoK frameworks repository (\texttt{https://github.com/MPC-SoK/frameworks}). \\
+\textit{Open-Source Software:} 
+\begin{itemize}[label={}, noitemsep, topsep=0pt]
+    \item MPC-SoK frameworks repository (\href{https://github.com/MPC-SoK/frameworks}{\texttt{github.com/MPC-SoK/frameworks}}).
+    \item Canetti et al.'s protocol for threshold ECDSA signing (\href{https://github.com/boltlabs-inc/tss-ecdsa}{\texttt{github.com/boltlabs-inc/tss-ecdsa}}).\\
+\end{itemize}
 
 \textsc{Teaching}
 
