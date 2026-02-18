@@ -3,7 +3,7 @@
 \usepackage{enumitem}
 \usepackage[pdfborder={0 0 0}]{hyperref}
 \usepackage[x11names]{xcolor}
-\hypersetup{ 
+\hypersetup{
     urlcolor=Orchid4,
     colorlinks=true,
 }
@@ -18,13 +18,21 @@
 
 \textsc{Work Experience} \hrulefill
 \begin{itemize}[label={}]
+  \item \textbf{Galois, Inc}, USA (remote) \\
+  \textit{Research Engineer.} November 2023 - present.
+  \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+    \item Led project to develop \href{https://github.com/GaloisInc/cryptol-specs/}{high-quality Cryptol specifications} for 12+ NIST cryptography specs, including implementation, documentation and usability, developing readability standards, and education.
+    \item Built and maintained CI (on GitLab and GitHub) for projects supporting Rust, Haskell, and custom formal verification pipelines. Improved performance of existing systems by 20\% (caching, pipelining).
+    \item Performed as a software developer on contracts, focusing on effectively architecting code, maintaining readable documentation, comprehensive testing, and preparing effective transitions to clients.
+  \end{itemize}
+
   \item \textbf{Bolt Labs Holdings, Inc}, USA (remote) \\
   \textit{Cryptographic Engineer.} February 2021 - October 2023.\\
   \textit{Cryptography Consultant.} August 2019 - February 2021.
   \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
     \item Acted as tech lead for a small team to audit, prioritize, and implement changes to upgrade \href{https://github.com/boltlabs-inc/tss-ecdsa}{a threshold ECDSA library} from proof-of-concept to production quality in Rust.
     \item Developed cryptographic APIs for distributed protocols in collaboration with product and system developers for use in efficient, scalable applications; design goals included abstracting over deployment decisions (e.g. network topology, database setup) while preventing cryptographic misuse.
-    \item Wrote detailed specifications with implementation guidance for \href{https://github.com/boltlabs-inc/key-mgmt-spec}{custom cryptographic} \href{https://github.com/boltlabs-inc/zkchannels-spec}{protocols}. 
+    \item Wrote detailed specifications with implementation guidance for \href{https://github.com/boltlabs-inc/key-mgmt-spec}{custom cryptographic} \href{https://github.com/boltlabs-inc/zkchannels-spec}{protocols}.
     \item Collaborated on the development of custom distributed cryptographic protocols, including evaluation and comparison of dependencies and informal security analysis.
     \item Led education efforts outside the cryptography division sharing knowledge about general cryptography engineering and principles and providing cryptography onboarding for new hires.
     \item As a consultant, designed and implemented a proof-of-concept application of a custom protocol using MPC, including integrating academic MPC libraries.
@@ -42,6 +50,8 @@
 
 \textsc{Selected Open Source} \hrulefill
 \begin{itemize}[label={}]
+  \item \textbf{cryptol-specs} [\href{https://github.com/GaloisInc/cryptol-specs/}{\texttt{https://github.com/GaloisInc/cryptol-specs/}}]\\
+  Developed and improved a wide variety of cryptographic specifications to improve readability and alignment with NIST documents. Improved modularity, test coverage, CI scope, and documentation throughout. Work done at Galois.
   \item \textbf{tss-ecdsa} [\href{https://github.com/boltlabs-inc/tss-ecdsa}{\texttt{github.com/boltlabs-inc/tss-ecdsa}}]\\
   Improved a threshold ECDSA implementation, including auditing for correctness and code quality, abstracting internal APIs, adding tests, correcting security parameters, writing extensive documentation, and updating public API to be suitable for production deployments. Work done at Bolt Labs.
   \item \textbf{MPC frameworks} [\href{https://github.com/mpc-sok/frameworks}{\texttt{github.com/mpc-sok/frameworks}}]\\
@@ -52,7 +62,7 @@
 \begin{itemize}[label={}]
   \item \textbf{University of Pennsylvania}, Philadelphia, Pennsylvania USA \\
     Ph.D., M.S., Department of Computer Science, February 2021. Advised by Nadia Heninger.
-    
+
   \item \textbf{Tufts University}, Medford, Massachusetts USA \\
     B.S., Computer Science and Mathematics, May 2015. \textit{Summa Cum Laude}
 \end{itemize}
@@ -61,7 +71,7 @@
 
 \textit{Refereed Conference Proceedings}
 \begin{enumerate}[label={[\arabic*]}]
-\item \href{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IwKeLxkAAAAJ&citation_for_view=IwKeLxkAAAAJ:9yKSN-GCB0IC}{SoK: General Purpose Compilers for Secure Multi-Party Computation}. 
+\item \href{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IwKeLxkAAAAJ&citation_for_view=IwKeLxkAAAAJ:9yKSN-GCB0IC}{SoK: General Purpose Compilers for Secure Multi-Party Computation}.
 Marcella Hastings, Brett Hemenway, Daniel Noble, and Steve Zdancewic.
 In \textit{40th IEEE Symposium on Security and Privacy}. May 2019.
 \item \href{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IwKeLxkAAAAJ&citation_for_view=IwKeLxkAAAAJ:d1gkVwhDpl0C}{The Proof is in the Pudding: Proofs of Work for Solving Discrete Logarithms}.
